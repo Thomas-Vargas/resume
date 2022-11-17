@@ -1,7 +1,7 @@
 :root {
     --primary: #b38f00;
     --black: black;
-    --background: lightgray;
+    --background: rgb(239, 240, 231);
 }
 
 * {
@@ -38,7 +38,7 @@ body {
 }
 
 .font-sm {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 400;
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 .label {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 400;
 }
 
@@ -123,10 +123,24 @@ body {
 
 .project_label {
     margin: 20px;
+    font-size: 24px;
 }
 
 .projects p {
     margin: 20px;
+}
+
+.projects a {
+    text-decoration: none;
+    color: black;
+}
+
+.memoria_link ~ .memoria {
+    color: var(--primary)
+}
+
+.projects a:hover {
+    color: var(--primary);
 }
 
 .experience {
@@ -142,10 +156,44 @@ body {
 }
 
 .tech div {
-    margin: 20px;
-    width: 100px
+    margin: 15px;
+    width: 60px;
 }
 
 .tech .label {
     margin-bottom: 40px;
 }
+
+.job {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+}
+
+.job p {
+    margin-top: 20px;
+}
+
+.job .project_label {
+    margin-bottom: 5px;
+}
+
+.job_details {
+    margin-left: 40px;
+}
+
+.company {
+    margin-left: 20PX;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.education {
+    margin-bottom: 60px;
+}
+
+.education p {
+    margin-left: 20px;
+}
+
+
